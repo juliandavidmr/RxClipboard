@@ -20,7 +20,7 @@ function changeTemp(value) {
   if (isDiff(value, temp_content)) temp_content = value
 }
 
-export function watchClipboard(params) {
+export function watchClipboard(options = { watch: 200 }) {
   return Rx.Observable.create(observer => {
     try {
       setInterval(async() => {
@@ -29,7 +29,7 @@ export function watchClipboard(params) {
           changeTemp(content)
           observer.next(content)
         }
-      }, 200);
+      }, options.watch | 200);
     } catch (error) {
       observer.onCompleted(error)
       return () => console.log('disposed')

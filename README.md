@@ -36,4 +36,17 @@ Import using babel
 import * as rxclipboard from "rxclipboard"
 ```
 
+## API
+
+```js
+rxclipboard.watchClipboard( /* { options } */)
+// Example
+rxclipboard.watchClipboard({ watch: 200 })
+```
+
+| Option | Description                              | Default |
+|--------|------------------------------------------|---------|
+| watch  | Modify the change verification time (ms) | `200`   |
+
+
 License MIT _Julian David_ - 2017

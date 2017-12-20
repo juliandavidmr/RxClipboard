@@ -31,4 +31,9 @@ rxclipboard.watchClipboard().subscribe(
   () => log('onCompleted'))
 ```
 
+Import using babel
+```js
+import * as rxclipboard from "rxclipboard"
+```
+
 License MIT _Julian David_ - 2017

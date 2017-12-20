@@ -9,12 +9,11 @@
     "clean": "npm run clean:dist && npm run clean:reports && npm run clean:coverage",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "directories": {
-    "lib": "lib",
-    "test": "tests"
-  },
   "files": [
-    "lib"
+    "lib",
+    "package.json",
+    "LICENSE",
+    "README.md"
   ],
   "dependencies": {
     "copy-paste": "^1.3.0",

@@ -1,6 +1,6 @@
 {
   "name": "rxclipboard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Clipboard reactive to changes for Node",
   "main": "./lib/index.js",
   "scripts": {

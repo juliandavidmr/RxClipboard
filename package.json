@@ -1,0 +1,47 @@
+{
+  "name": "rxclipboard",
+  "version": "1.0.0",
+  "description": "Clipboard reactive to changes for Node",
+  "main": "./lib/index.js",
+  "scripts": {
+    "prebuild": "rm -rf lib",
+    "build": "npx babel src --out-dir lib",
+    "clean": "npm run clean:dist && npm run clean:reports && npm run clean:coverage",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "copy-paste": "^1.3.0",
+    "rxjs": "^5.5.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliandavidmr/RxClipboard.git"
+  },
+  "author": "Julian David <juliandavidmr> (https://github.com/juliandavidmr)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juliandavidmr/RxClipboard/issues"
+  },
+  "homepage": "https://github.com/juliandavidmr/RxClipboard#readme",
+  "engines": {
+    "node": ">= 6"
+  },
+  "keywords": [
+    "xclip",
+    "clipboard",
+    "rxjs",
+    "node"
+  ]
+}
